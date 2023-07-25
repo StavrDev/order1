@@ -16,8 +16,9 @@ class Subs:
         self.app.stop()
         return subs
     
-client = Subs(22239809,'fc57726d589788687fc518260cfe176d')
-channels = ["@loshki0809", '@br_dev']
+client = Subs(api_id, api_hash)
+
+channels = ['', '']
 
 for channel in channels:        
     print('Количество подписчиков канала',channel,client.check_members_count(channel),date.today())
